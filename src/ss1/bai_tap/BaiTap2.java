@@ -1,8 +1,8 @@
-package ss1.bai_tap.ss1;
+package ss1.bai_tap;
 
 import java.util.Scanner;
 
-public class bai2 {
+public class BaiTap2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập vào số tiền cần chuyển đổi (USD): ");
