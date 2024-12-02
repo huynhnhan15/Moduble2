@@ -2,23 +2,18 @@ package ss2.bai_tap;
 
 public class BaiTap3 {
     public static void main(String[] args) {
-        int N = 2;
-        System.out.println("Các số nguyên tố nhỏ hơn 100 là: ");
-        while (N < 100) {
-            if (isPrime(N)) {
-                System.out.println(N + " ");
+        System.out.println("Các số nguyên tố nhỏ hơn 100 là:");
+        for (int N = 2; N < 100; N++) {
+            boolean isPrime = true;
+            for (int i = 2; i <= Math.sqrt(N); i++) {
+                if (N % i == 0) {
+                    isPrime = false;
+                    break;
+                }
             }
-            N++;
+            if (isPrime) {
+                System.out.print(N + " ");
+            }
         }
-    }
-
-    public static boolean isPrime(int n) {
-        if (n < 2)
-            return false;
-        for (int i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i == 0)
-                return false;
-        }
-        return true;
     }
 }

@@ -2,25 +2,22 @@ package ss2.bai_tap;
 
 public class BaiTap2 {
     public static void main(String[] args) {
-        int count = 0;
-        int N = 2;
-        System.out.println("20 số nguyên tố đầu tiền là: ");
+        System.out.println("20 số nguyên tố đầu tiên là:");
+        int count = 0, N = 2;
         while (count < 20) {
-            if (isPrime(N)) {
-                System.out.println(N + " ");
+            boolean isPrime = true;
+            if (N < 2) isPrime = false;
+            for (int i = 2; i <= Math.sqrt(N); i++) {
+                if (N % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
+                System.out.print(N + " ");
                 count++;
             }
             N++;
         }
-    }
-
-    public static boolean isPrime(int n) {
-        if (n < 2)
-            return false;
-        for (int i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i == 0)
-                return false;
-        }
-        return true;
     }
 }
