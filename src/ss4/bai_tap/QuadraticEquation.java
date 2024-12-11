@@ -1,4 +1,4 @@
-package ss4.BaiTap;
+package ss4.bai_tap;
 
 import java.util.Scanner;
 

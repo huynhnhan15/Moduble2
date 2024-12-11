@@ -1,4 +1,4 @@
-package ss5.baitap2;
+package ss5.bai_tap_2;
 public class Test {
     public static void main(String[] args) {
         // Tạo đối tượng Student

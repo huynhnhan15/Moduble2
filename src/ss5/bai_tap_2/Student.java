@@ -1,4 +1,4 @@
-package ss5.baitap2;
+package ss5.bai_tap_2;
 public class Student {
     // Thuộc tính private
     private String name = "John";

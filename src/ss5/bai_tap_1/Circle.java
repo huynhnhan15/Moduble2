@@ -1,4 +1,4 @@
-package ss5.baitap1;
+package ss5.bai_tap_1;
 public class Circle {
     // Thuộc tính private
     private double radius = 1.0;
