@@ -3,7 +3,7 @@ package ss6.bai_tap.bai1;
 import java.awt.*;
 
 public class Cylinder  extends Circle {
-    public float height;
+    private float height;
 
     public Cylinder() {
         super();
