@@ -5,16 +5,16 @@ import java.time.LocalDate;
 public class Client {
     private int id;
     private String name;
-    private LocalDate birthday;
+    private LocalDate birthDay;
     private String address;
 
     public Client() {
     }
 
-    public Client(int id, String name, LocalDate birthday, String address) {
+    public Client(int id, String name, LocalDate birthDay, String address) {
         this.id = id;
         this.name = name;
-        this.birthday = birthday;
+        this.birthDay = birthDay;
         this.address = address;
     }
 
@@ -26,12 +26,12 @@ public class Client {
         this.address = address;
     }
 
-    public LocalDate getBirthday() {
-        return birthday;
+    public LocalDate birthDay() {
+        return birthDay;
     }
 
-    public void setBirthday(LocalDate birthday) {
-        this.birthday = birthday;
+    public void setBirthday(LocalDate birthDay) {
+        this.birthDay = birthDay;
     }
 
     public int getId() {
@@ -55,7 +55,7 @@ public class Client {
         return "Client{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", birthday=" + birthday +
+                ", birthday=" + birthDay +
                 ", address='" + address + '\'' +
                 '}';
     }
