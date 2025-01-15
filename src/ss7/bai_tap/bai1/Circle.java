@@ -42,7 +42,7 @@ public class Circle extends Shape  {
                 + super.toString();
     }
 
-    @Override
+
     public void resize(double percent) {
         Random random = new Random();
         percent = 1 + random.nextDouble() * 99;
